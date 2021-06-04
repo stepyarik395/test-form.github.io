@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Form</title>
+</head>
+
+<body>
+  <section class="form-section">
+    <div class="form-section__wrapper">
+      <h2 class="form-section__title">
+        Login To Your Account / Register New
+      </h2>
+      <div class="flex-container">
+        <div class="form__flex__wrapper">
+          <div class="form__header">
+            <div class="circle__bcg">
+              <img src="assets/img/icon.png" alt="icon">
+            </div>
+            <h3>Login To Your Account / Register New</h3>
+          </div>
+          <div class="form">
+            <div class="form__wrapper">
+              <div class="sign-in-block">
+                <form id="login" method="POST" action="form.php">
+                  <div class="gradient-line">
+                    <img src="assets/img/spm.png" alt="vector">
+                    <div class="circle__decor">
+                      /
+                    </div>
+                  </div>
+                  <input required form="login" placeholder="User Name" class="sign-in__inp" type="text">
+                  <input autocomplete="off" required form="login" placeholder="Password" class="sign-in__inp"
+                    type="password">
+                  <div class="checkbox__wrapper">
+                    <input form="login" type="checkbox" class="custom-checkbox" id="custom-checkbox">
+                    <label for="custom-checkbox" class="checkbox__inp__text">Remember My password</label>
+                    <div class="checkbox__wrapper__tooltip">You no longer need to enter<br> a password every time you
+                      use
+                      the
+                      s</div>
+                    <button type="submit" class="login__button">Login</button>
+                  </div>
+                </form>
+              </div>
+              <div class="sign-up-block">
+                <form id="register" method="POST" action="form.php">
+                  <span>Register</span>
+                  <label>Email</label>
+                  <div class="rel-wrap">
+                    <input class="sign-up" name="email" required form="register" type="email">
+                    <p></p>
+                  </div>
+                  <label>User Name</label>
+                  <small class="warning__numbers">only latin characters</small>
+                  <div class="rel-wrap">
+                    <input class="sign-up" name="name" pattern="[a-zA-Z]+" required form="register" id="name-inp"
+                      type="text">
+                    <p></p>
+                  </div>
+                  <label>Password</label>
+                  <div class="rel-wrap">
+                    <input autocomplete="on" form="register" class="sign-up" name="password" required type="password">
+                    <p></p>
+                  </div>
+                  <div class="button__wrapper">
+                    <button type="submit" class="register__button">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
